@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import axios from "axios"
+import { useEffect, useState } from "react"
 
 function App() {
-  const [count, setCount] = useState(0)
-  console.log("import.meta.env.VITE_API_URL:", import.meta.env.VITE_API_URL);
+  const [items, setItems] = useState([])
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    axios.get(`${import.meta.env.VITE_API_URL}/items`)
+      .then(res => setItems(res.data))
+      .catch(err => setError(err.message))
+  }, [])
+
+  console.log({
+    items,
+    error
+  });
+
   return (
-    <>
-      <div>
-        {import.meta.env.VITE_API_URL}
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div style={{ display: "flex", justifyContent: "center", flexDirection: "column" }}>
+      <h1 style={{ margin: "auto" }}>MERCADO ITEMS</h1>
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        {items.map(item => (
+          <div style={{ width: '25%', border: "solid 1px black" }}>
+            <h1>{item.title}</h1>
+            <img src={item.photo} style={{ maxWidth: '100%' }} />
+            <p>{item.description}</p>
+            <h3>{item.price} TND</h3>
+          </div>
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 

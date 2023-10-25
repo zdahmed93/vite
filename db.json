@@ -1,0 +1,102 @@
+{
+    "items": [
+        {
+            "_id": "653526cb39e4ea1831a91dca",
+            "title": "Test 1 From JsonServer",
+            "description": "lorem ipsum",
+            "photo": "https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg",
+            "price": 80,
+            "user": {
+                "_id": "6535248939e4ea1831a91dc9",
+                "firstName": "Ahmed",
+                "lastName": "Zribi",
+                "email": "ahmed@gmail.com"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "653526e839e4ea1831a91dcb",
+            "title": "Test 2",
+            "description": "lorem ipsum 2",
+            "photo": "https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg",
+            "price": 100,
+            "user": {
+                "_id": "6535248939e4ea1831a91dc9",
+                "firstName": "Ahmed",
+                "lastName": "Zribi",
+                "email": "ahmed@gmail.com"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "653526eb39e4ea1831a91dcc",
+            "title": "Test 3",
+            "description": "lorem ipsum 2",
+            "photo": "https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg",
+            "price": 100,
+            "user": {
+                "_id": "6535248939e4ea1831a91dc9",
+                "firstName": "Ahmed",
+                "lastName": "Zribi",
+                "email": "ahmed@gmail.com"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "653526ed39e4ea1831a91dcd",
+            "title": "Test 4",
+            "description": "lorem ipsum 2",
+            "photo": "https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg",
+            "price": 100,
+            "user": {
+                "_id": "6535248939e4ea1831a91dc9",
+                "firstName": "Ahmed",
+                "lastName": "Zribi",
+                "email": "ahmed@gmail.com"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "653526ef39e4ea1831a91dce",
+            "title": "Test 5",
+            "description": "lorem ipsum 2",
+            "photo": "https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg",
+            "price": 100,
+            "user": {
+                "_id": "6535248939e4ea1831a91dc9",
+                "firstName": "Ahmed",
+                "lastName": "Zribi",
+                "email": "ahmed@gmail.com"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "653526f239e4ea1831a91dcf",
+            "title": "Test 6",
+            "description": "lorem ipsum 2",
+            "photo": "https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg",
+            "price": 100,
+            "user": {
+                "_id": "6535248939e4ea1831a91dc9",
+                "firstName": "Ahmed",
+                "lastName": "Zribi",
+                "email": "ahmed@gmail.com"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "653526f539e4ea1831a91dd0",
+            "title": "Test 7",
+            "description": "lorem ipsum 2",
+            "photo": "https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg",
+            "price": 100,
+            "user": {
+                "_id": "6535248939e4ea1831a91dc9",
+                "firstName": "Ahmed",
+                "lastName": "Zribi",
+                "email": "ahmed@gmail.com"
+            },
+            "__v": 0
+        }
+    ]
+}
