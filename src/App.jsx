@@ -1,5 +1,9 @@
-import axios from "axios"
-import { useEffect, useState } from "react"
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import ItemCard from './components/ItemCard';
 
 function App() {
   const [items, setItems] = useState([])
@@ -11,25 +15,17 @@ function App() {
       .catch(err => setError(err.message))
   }, [])
 
-  console.log({
-    items,
-    error
-  });
-
   return (
-    <div style={{ display: "flex", justifyContent: "center", flexDirection: "column" }}>
-      <h1 style={{ margin: "auto" }}>MERCADO ITEMS</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-        {items.map(item => (
-          <div style={{ width: '25%', border: "solid 1px black" }}>
-            <h1>{item.title}</h1>
-            <img src={item.photo} style={{ maxWidth: '100%' }} />
-            <p>{item.description}</p>
-            <h3>{item.price} TND</h3>
-          </div>
+    <Container>
+      <h1 className='text-center'>MERCADO ITEMS</h1>
+      <Row>
+        {items.map((item, i) => (
+          <Col sm={6} md={4} lg={3} key={i} className='mb-4'>
+            <ItemCard item={item} />
+          </Col>
         ))}
-      </div>
-    </div>
+      </Row>
+    </Container>
   )
 }
 
